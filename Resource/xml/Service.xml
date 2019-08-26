@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <Service>
+    <Token>PictureItem</Token>
+    <Name>PictureItem JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServicePictureItemJSON</typeName>
+  </Service>
+  <Service>
+    <Token>PictureList</Token>
+    <Name>PictureList JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServicePictureListJSON</typeName>
+  </Service>
+  <Service>
+    <Token>ServiceSavePanl</Token>
+    <Name>ServiceSavePanl JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceSavePanlJSON</typeName>
+  </Service>
+  <Service>
+    <Token>ServiceSaveRow</Token>
+    <Name>ServiceSaveRow JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceSaveRowJSON</typeName>
+  </Service>
+
+  <Service>
+    <Token>ServiceGetPanls</Token>
+    <Name>ServiceGetPanls JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceGetPanlJSON</typeName>
+  </Service>
+
+  <Service>
+    <Token>ServiceDeletePanl</Token>
+    <Name>ServiceDeletePanl JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceDeletePanlJSON</typeName>
+  </Service>
+
+
+  <Service>
+    <Token>ServiceDeleteRow</Token>
+    <Name>ServiceDeleteRow JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceDeleteRowJSON</typeName>
+  </Service>
+
+  
+
+  <Service>
+    <Token>ServiceGetTabs</Token>
+    <Name>ServiceGetTabs JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceGetTabJSON</typeName>
+  </Service>
+  <Service>
+    <Token>ServiceGetModules</Token>
+    <Name>ServiceGetModules JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceGetModuleJSON</typeName>
+  </Service>  
+  <Service>
+    <Token>ServiceSortPanlRow</Token>
+    <Name>ServiceSortPanlRow JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceSortPanlRowJSON</typeName>
+  </Service>
+
+  <Service>
+    <Token>GetSettings</Token>
+    <Name>GetSettings JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceGetSettingJSON</typeName>
+  </Service>
+  <Service>
+    <Token>SaveSettings</Token>
+    <Name>SaveSettings JSON</Name>
+    <assemblyName>DNNGo.Modules.ThemePlugin</assemblyName>
+    <typeName>DNNGo.Modules.ThemePlugin.ServiceSaveSettingJSON</typeName>
+  </Service>
+</Services>

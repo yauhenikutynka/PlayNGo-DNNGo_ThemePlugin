@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DNNGo_ThemePlugin>
+  <Tabs>
+    <!--Dashboard-->
+    <!--<TabItem>
+      <Token><![CDATA[Dashboard]]></Token>
+      <Title><![CDATA[Dashboard]]></Title>
+      --><!--<Src><![CDATA[Manager_Dashboard.ascx]]></Src>--><!--
+      <Src><![CDATA[]]></Src>
+      <Icon><![CDATA[fa fa-dashboard]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[]]></IsAdministrator>
+    </TabItem>-->
+
+
+    <TabItem>
+      <Token><![CDATA[Pages]]></Token>
+      <Title><![CDATA[Pages]]></Title>
+      <Src><![CDATA[Manager_TabList.ascx]]></Src>
+      <Icon><![CDATA[fa fa-pagelines]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Background]]></Token>
+      <Title><![CDATA[Background]]></Title>
+      <Src><![CDATA[Manager_TabEdit.ascx]]></Src>
+      <Icon><![CDATA[fa fa-pagelines]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[false]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Breadcrumb]]></Token>
+      <Title><![CDATA[Breadcrumb]]></Title>
+      <Src><![CDATA[Manager_TabEdit.ascx]]></Src>
+      <Icon><![CDATA[fa fa-pagelines]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[false]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+	<TabItem>
+		<Token><![CDATA[EditIcon]]></Token>
+		<Title><![CDATA[Edit Icon]]></Title>
+		<Src><![CDATA[Manager_TabIconEdit.ascx]]></Src>
+		<Icon><![CDATA[fa fa-pagelines]]></Icon>
+		<Parent><![CDATA[]]></Parent>
+		<Visible><![CDATA[false]]></Visible>
+		<IsAdministrator><![CDATA[true]]></IsAdministrator>
+	</TabItem>
+    <!--<TabItem>
+      <Token><![CDATA[MegaMenu]]></Token>
+      <Title><![CDATA[MegaMenu]]></Title>
+      <Src><![CDATA[Manager_TabEdit.ascx]]></Src>
+      <Icon><![CDATA[fa fa-pagelines]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[false]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>-->
+    <TabItem>
+      <Token><![CDATA[MegaMenu]]></Token>
+      <Title><![CDATA[MegaMenu]]></Title>
+      <Src><![CDATA[Manager_EditMegamenu.ascx]]></Src>
+      <Icon><![CDATA[fa fa-pagelines]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[false]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+   
+    
+    <TabItem>
+      <Token><![CDATA[Fonts]]></Token>
+      <Title><![CDATA[Fonts]]></Title>
+      <Src><![CDATA[Manager_FontList.ascx]]></Src>
+      <Icon><![CDATA[fa fa-font]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+	  <TabItem>
+		  <Token><![CDATA[AddFontByGoogle]]></Token>
+		  <Title><![CDATA[Add Google Font]]></Title>
+		  <Src><![CDATA[Manager_FontAdd.ascx]]></Src>
+		  <Icon><![CDATA[fa fa-link]]></Icon>
+		  <Link><![CDATA[Fonts]]></Link>
+		  <Parent><![CDATA[]]></Parent>
+		  <Visible><![CDATA[false]]></Visible>
+		  <IsAdministrator><![CDATA[false]]></IsAdministrator>
+	  </TabItem>
+    <TabItem>
+		  <Token><![CDATA[AddFontByUpload]]></Token>
+		  <Title><![CDATA[Upload Font]]></Title>
+		  <Src><![CDATA[Manager_FontUpload.ascx]]></Src>
+		  <Icon><![CDATA[fa fa-paperclip]]></Icon>
+		  <Link><![CDATA[Fonts]]></Link>
+		  <Parent><![CDATA[]]></Parent>
+		  <Visible><![CDATA[false]]></Visible>
+		  <IsAdministrator><![CDATA[false]]></IsAdministrator>
+	  </TabItem>
+      
+      
+    
+      
+      
+      
+      
+      
+      
+    <TabItem>
+      <Token><![CDATA[Library]]></Token>
+      <Title><![CDATA[Library]]></Title>
+      <Src><![CDATA[Manager_Library.ascx]]></Src>
+      <Icon><![CDATA[fa clip-image]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+	  <TabItem>
+		  <Token><![CDATA[Synchronize]]></Token>
+		  <Title><![CDATA[Synchronize Files]]></Title>
+		  <Src><![CDATA[Manager_Library_Synchronize.ascx]]></Src>
+		  <Icon><![CDATA[fa fa-cloud-upload]]></Icon>
+		  <Link><![CDATA[Library]]></Link>
+		  <Parent><![CDATA[]]></Parent>
+		  <Visible><![CDATA[false]]></Visible>
+		  <IsAdministrator><![CDATA[false]]></IsAdministrator>
+	  </TabItem>
+
+
+    <TabItem>
+      <Token><![CDATA[Skins]]></Token>
+      <Title><![CDATA[Skins]]></Title>
+      <Src><![CDATA[]]></Src>
+      <Icon><![CDATA[fa clip-stack-empty]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Skin_Options]]></Token>
+      <Title><![CDATA[Skin Options]]></Title>
+      <Src><![CDATA[Manager_SkinOptions.ascx]]></Src>
+      <Icon><![CDATA[fa clip-data]]></Icon>
+      <Parent><![CDATA[Skins]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Global_Options]]></Token>
+      <Title><![CDATA[Global Options]]></Title>
+      <Src><![CDATA[Manager_GlobalOptions.ascx]]></Src>
+      <Icon><![CDATA[fa clip-data]]></Icon>
+      <Parent><![CDATA[Skins]]></Parent>
+      <Visible><![CDATA[false]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Skin_NewSkin]]></Token>
+      <Title><![CDATA[Create New Skin]]></Title>
+      <Src><![CDATA[Manager_SkinNew.ascx]]></Src>
+      <Icon><![CDATA[fa fa-plus]]></Icon>
+      <Parent><![CDATA[Skins]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Skin_Settings]]></Token>
+      <Title><![CDATA[Skin Settings]]></Title>
+      <Src><![CDATA[Manager_SkinSettings.ascx]]></Src>
+      <Icon><![CDATA[fa clip-settings]]></Icon>
+      <Parent><![CDATA[Skins]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+    
+  
+    <!--Settings--><!--
+    <TabItem>
+      <Token><![CDATA[Settings]]></Token>
+      <Title><![CDATA[Settings]]></Title>
+      <Src><![CDATA[Setting_Options.ascx]]></Src>
+      <Icon><![CDATA[clip-cog]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+    <TabItem>
+      <Token><![CDATA[Setting]]></Token>
+      <Title><![CDATA[General]]></Title>
+      <Src><![CDATA[Manager_Options.ascx]]></Src>
+      <Icon><![CDATA[fa fa-wrench]]></Icon>
+      <Parent><![CDATA[Settings]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>
+   
+    <TabItem>
+      <Token><![CDATA[jQuerySettings]]></Token>
+      <Title><![CDATA[jQuery Settings]]></Title>
+      <Src><![CDATA[Manager_Option_jQuery.ascx]]></Src>
+      <Icon><![CDATA[fa clip-code]]></Icon>
+      <Parent><![CDATA[Settings]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>-->
+
+
+
+
+    <!--Error-->
+    <TabItem>
+      <Token><![CDATA[Error]]></Token>
+      <Title><![CDATA[Error]]></Title>
+      <Src><![CDATA[Manager_ErrorCatch.ascx]]></Src>
+      <Icon><![CDATA[clip-globe]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[false]]></Visible>
+      <IsAdministrator><![CDATA[false]]></IsAdministrator>
+    </TabItem>
+
+    <!--<TabItem>
+      <Token><![CDATA[]]></Token>
+      <Title><![CDATA[]]></Title>
+      <Src><![CDATA[]]></Src>
+      <Icon><![CDATA[]]></Icon>
+      <Parent><![CDATA[]]></Parent>
+      <Visible><![CDATA[true]]></Visible>
+      <IsAdministrator><![CDATA[true]]></IsAdministrator>
+    </TabItem>-->
+    
+    
+    
+    
+    
+  </Tabs>
+</DNNGo_ThemePlugin>

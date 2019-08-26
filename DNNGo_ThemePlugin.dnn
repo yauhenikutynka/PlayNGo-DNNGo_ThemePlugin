@@ -1,0 +1,146 @@
+﻿<dotnetnuke type="Package" version="5.0"> 
+  <packages>
+    <package name="DNNGo.ThemePlugin" type="Module" version="02.03.00">
+      <friendlyName>DNNGo ThemePlugin</friendlyName>
+      <description>
+        <![CDATA[
+        Support Email: <a  href="mailto:dnnskindev@gmail.com" title="Email">dnnskindev@gmail.com</a> Our Site: <a  target="_blank" href="http://www.DNNGo.net" title="Email">www.DNNGo.net</a>
+        ]]>
+      </description>
+      <iconFile>DesktopModules/DNNGo_ThemePlugin/Resource/images/logo-modules.png</iconFile>
+      <owner>
+        <name>DNNGo.net</name>
+        <organization>DNNGo.net Corporation</organization>
+        <url>
+          <![CDATA[http://www.dnngo.net]]>
+        </url>
+        <email>
+          <![CDATA[dnnskindev@gmail.com]]>
+        </email>
+      </owner>
+      <license  src="license.txt" />
+      <releaseNotes src="ReleaseNotes.txt"/>
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="CoreVersion">08.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>DNNGo.ThemePlugin</moduleName>
+            <foldername>DNNGo_ThemePlugin</foldername>
+            <businessControllerClass>DNNGo.Modules.ThemePlugin.baseController,DNNGo.Modules.ThemePlugin</businessControllerClass>
+            <supportedFeatures>
+              <supportedFeature type="Portable" />
+            </supportedFeatures>
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>DNNGo.ThemePlugin</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/DNNGo_ThemePlugin/View_Index.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+          <eventMessage>
+            <processorType>DotNetNuke.Entities.Modules.EventMessageProcessor, DotNetNuke</processorType>
+            <processorCommand>UpgradeModule</processorCommand>
+            <attributes>
+              <businessControllerClass>DNNGo.Modules.ThemePlugin.baseController,DNNGo.Modules.ThemePlugin</businessControllerClass>
+              <desktopModuleID>[DESKTOPMODULEID]</desktopModuleID>
+              <upgradeVersionsList>01.00.00</upgradeVersionsList>
+            </attributes>
+          </eventMessage>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules\DNNGo_ThemePlugin\</basePath>
+            <resourceFile>
+              <name>ResourceFile.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <path>bin</path>
+              <name>DNNGo.Modules.ThemePlugin.dll</name>
+              <version>02.03.00</version>
+            </assembly>
+            
+            <assembly>
+              <path>bin</path>
+              <name>CNVelocity.dll</name>
+              <version>01.01.00</version>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="Script">
+          <scripts>
+            <basePath>DesktopModules\DNNGo_ThemePlugin</basePath>
+            <script type="Install">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>01.00.00.SqlDataProvider</name>
+              <version>01.00.00</version>
+            </script>
+            <script type="UnInstall">
+              <path>Providers\DataProviders\SqlDataProvider</path>
+              <name>Uninstall.SqlDataProvider</name>
+              <version>01.00.00</version>
+            </script>
+          </scripts>
+        </component>
+      </components>
+    </package>
+    <package name="DNNGo.SkinObject.ThemePlugin" type="SkinObject" version="02.03.00">
+      <friendlyName>DNNGo SkinObject ThemePlugin</friendlyName>
+      <description>
+        <![CDATA[Support Email: <a  href="mailto:dnnskindev@gmail.com" title="Email">dnnskindev@gmail.com</a> Our Site: <a  target="_blank" href="http://www.DNNGo.net" title="Email">www.DNNGo.net</a>]]>
+      </description>
+      <iconFile>DesktopModules/DNNGo_ThemePlugin/Resource/images/logo-modules.png</iconFile>
+      <owner>
+        <name>DNNGo.net</name>
+        <organization>DNNGo.net Corporation</organization>
+        <url>
+          <![CDATA[http://www.dnngo.net]]>
+        </url>
+        <email>
+          <![CDATA[dnnskindev@gmail.com]]>
+        </email>
+      </owner>
+      <license  src="license.txt" />
+      <releaseNotes src="ReleaseNotes.txt"/>
+      <azureCompatible>true</azureCompatible>
+      <dependencies>
+        <dependency type="CoreVersion">08.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="SkinObject">
+          <moduleControl>
+            <controlKey>DNNGO_THEMEMEGAMENU</controlKey>
+            <controlSrc>DesktopModules/DNNGo_ThemePlugin/Skin_Megamenu.ascx</controlSrc>
+            <supportsPartialRendering>False</supportsPartialRendering>
+          </moduleControl>
+        </component>
+        <component type="SkinObject">
+          <moduleControl>
+            <controlKey>DNNGO_THEMEPLUGIN</controlKey>
+            <controlSrc>DesktopModules/DNNGo_ThemePlugin/Skin_Plugin.ascx</controlSrc>
+            <supportsPartialRendering>False</supportsPartialRendering>
+          </moduleControl>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

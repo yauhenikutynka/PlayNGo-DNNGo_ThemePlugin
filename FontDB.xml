@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlDB DBName="FontDB" DBVersion="1">
+  <FontDB>
+    <PrimaryGuid>16f20792cfdb43c7941ab4e9898d9e77</PrimaryGuid>
+    <Alias>Raleway</Alias>
+    <Family>Raleway</Family>
+    <Bold>bold,normal</Bold>
+    <Subset></Subset>
+    <FontUrl>https://fonts.googleapis.com/css?family=Raleway</FontUrl>
+    <Font_File_Eot></Font_File_Eot>
+    <Font_File_Svg></Font_File_Svg>
+    <Font_File_Ttf></Font_File_Ttf>
+    <Font_File_Woff></Font_File_Woff>
+    <IsFontLink>True</IsFontLink>
+    <IsSystem>False</IsSystem>
+    <CreateTime>12/9/2016 5:16:15 PM</CreateTime>
+    <UpdateTime>12/16/2016 2:06:29 PM</UpdateTime>
+    <Enable>True</Enable>
+  </FontDB>
+  <FontDB>
+    <PrimaryGuid>e7e103d72ce6461ea64aa6af53a582a1</PrimaryGuid>
+    <Alias>Open Sans</Alias>
+    <Family>Open Sans</Family>
+    <Bold>300,400,700</Bold>
+    <Subset></Subset>
+    <FontUrl>https://fonts.googleapis.com/css?family=Open+Sans:300,400,700</FontUrl>
+    <Font_File_Eot></Font_File_Eot>
+    <Font_File_Svg></Font_File_Svg>
+    <Font_File_Ttf></Font_File_Ttf>
+    <Font_File_Woff></Font_File_Woff>
+    <IsFontLink>True</IsFontLink>
+    <IsSystem>False</IsSystem>
+    <CreateTime>12/9/2016 5:11:02 PM</CreateTime>
+    <UpdateTime>12/16/2016 5:15:50 PM</UpdateTime>
+    <Enable>False</Enable>
+  </FontDB>
+  <FontDB>
+    <PrimaryGuid>arial</PrimaryGuid>
+    <Alias>Arial</Alias>
+    <Family>Arial</Family>
+    <Bold>normal,bold</Bold>
+    <Subset>arabic</Subset>
+    <FontUrl></FontUrl>
+    <Font_File_Eot></Font_File_Eot>
+    <Font_File_Svg></Font_File_Svg>
+    <Font_File_Ttf></Font_File_Ttf>
+    <Font_File_Woff></Font_File_Woff>
+    <IsFontLink>True</IsFontLink>
+    <IsSystem>true</IsSystem>
+    <CreateTime>12/6/2016 9:06:52 AM</CreateTime>
+    <UpdateTime>12/6/2016 9:06:52 AM</UpdateTime>
+  </FontDB>
+</XmlDB>

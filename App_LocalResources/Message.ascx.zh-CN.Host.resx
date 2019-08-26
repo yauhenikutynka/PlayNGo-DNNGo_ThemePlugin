@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ImportThemeError.Message" xml:space="preserve">
+    <value>导入主题 :{0} 失败.需要重新操作.</value>
+  </data>
+  <data name="ImportThemeSuccess.Message" xml:space="preserve">
+    <value>导入主题 :{0} 成功.</value>
+  </data>
+  <data name="InstallThemeError.Message" xml:space="preserve">
+    <value>安装主题模板:{0} 失败.</value>
+  </data>
+  <data name="InstallThemeSuccess.Message" xml:space="preserve">
+    <value>安装主题模板:{0}  成功.</value>
+  </data>
+  <data name="NoTemplate.Message" xml:space="preserve">
+    <value>没有设置模板项. </value>
+  </data>
+  <data name="SaveArticleError.Message" xml:space="preserve">
+    <value>保存文章 :{0} 失败.</value>
+  </data>
+  <data name="SaveCategoryError.Message" xml:space="preserve">
+    <value>保存分类 :{0} 失败.</value>
+  </data>
+  <data name="SaveCategorySuccess.Message" xml:space="preserve">
+    <value>保存分类 :{0} 成功.</value>
+  </data>
+  <data name="SaveLicenseSuccess.Message" xml:space="preserve">
+    <value>保存授权信息 :{0} 成功.</value>
+    <comment>Save authorization code :{0} successfully.</comment>
+  </data>
+  <data name="SaveTagError.Message" xml:space="preserve">
+    <value>保存标签 :{0} 失败.</value>
+  </data>
+  <data name="SaveTagSuccess.Message" xml:space="preserve">
+    <value>保存标签 :{0} 成功.</value>
+  </data>
+  <data name="SaveThemeError.Message" xml:space="preserve">
+    <value>保存主题 :{0} 失败.</value>
+  </data>
+  <data name="SaveThemeFileSuccess.Message" xml:space="preserve">
+    <value>保存主题文件成功.</value>
+  </data>
+  <data name="SaveThemeSuccess.Message" xml:space="preserve">
+    <value>保存主题 :{0} 成功.</value>
+  </data>
+  <data name="UpdateSettingsSuccess.Message" xml:space="preserve">
+    <value>更新设置/选项成功.</value>
+  </data>
+  <data name="UpLoadError.Message" xml:space="preserve">
+    <value>上传文件:{0}  失败.</value>
+  </data>
+  <data name="UpLoadNonempty.Message" xml:space="preserve">
+    <value>请选择一个文件后再上传.</value>
+  </data>
+  <data name="UpLoadSuccess.Message" xml:space="preserve">
+    <value>上传文件:{0} 成功.</value>
+  </data>
+  <data name="GridViewEmpty.Message" xml:space="preserve">
+    <value>列表暂时没有更多的记录.</value>
+  </data>
+  <data name="RefreshFilterServiceSuccess.Message" xml:space="preserve">
+    <value>刷新筛选服务:{0}  成功.</value>
+  </data>
+  <data name="ImportArticleNullError.Message" xml:space="preserve">
+    <value>没有文件被上传, 文件导入失败,</value>
+  </data>
+  <data name="ImportArticleSuccess.Message" xml:space="preserve">
+    <value>{0} 篇文章导入成功.</value>
+  </data>
+  <data name="SubscribeEmailTemplate_Subject.Template" xml:space="preserve">
+    <value>发布了一篇新的文章: [Title]</value>
+  </data>
+  <data name="SubscribeSuccess.Message" xml:space="preserve">
+    <value>订阅文章成功.</value>
+  </data>
+  <data name="UnsubscribeSuccess.Message" xml:space="preserve">
+    <value>退订文章成功.</value>
+  </data>
+  <data name="SaveSkinSuccess.Message" xml:space="preserve">
+    <value>保存皮肤 :{0} 成功.</value>
+  </data>
+  <data name="SaveStyleSuccess.Message" xml:space="preserve">
+    <value>文件编辑成功.</value>
+  </data>
+  <data name="SaveSubscriptionError.Message" xml:space="preserve">
+    <value>保存订阅邮箱&amp;角色 :{0} 失败.</value>
+  </data>
+  <data name="SaveSubscriptionSuccess.Message" xml:space="preserve">
+    <value>保存订阅邮箱&amp;角色 :{0} 成功.</value>
+  </data>
+  <data name="DeleteArticleError.Message">
+    <value>删除文章 :{0} 成功.</value>
+  </data>
+  <data name="DeleteArticleSuccess.Message">
+    <value>删除文章 :{0} 成功.</value>
+  </data>
+  <data name="DeleteCategoryError.Message">
+    <value>删除分类:{0} 失败.</value>
+  </data>
+  <data name="DeleteCategorySuccess.Message">
+    <value>删除分类:{0} 成功.</value>
+  </data>
+  <data name="DeleteCommentError.Message">
+    <value>删除文章评论 :{0} 失败.</value>
+  </data>
+  <data name="DeleteCommentSuccess.Message">
+    <value>删除文章评论 :{0} 成功.</value>
+  </data>
+  <data name="DeleteMediaLibraryError.Message">
+    <value>删除媒体文件 :{0} 失败.</value>
+  </data>
+  <data name="DeleteMediaLibrarySuccess.Message">
+    <value>删除媒体文件 :{0} 成功.</value>
+  </data>
+  <data name="DeleteSubscriptionError.Message">
+    <value>删除文章订阅记录 :{0} 失败.</value>
+  </data>
+  <data name="DeleteSubscriptionSuccess.Message">
+    <value>删除文章订阅记录 :{0} 成功.</value>
+  </data>
+  <data name="DeleteTagError.Message">
+    <value>删除文章标签 :{0} 失败.</value>
+  </data>
+  <data name="DeleteTagSuccess.Message">
+    <value>删除文章标签 :{0} 成功.</value>
+  </data>
+  <data name="DeleteThemeError.Message">
+    <value>删除主题项 :{0} 失败.</value>
+  </data>
+  <data name="DeleteThemeSuccess.Message">
+    <value>删除主题项 :{0} 成功.</value>
+  </data>
+  <data name="EnabledFilterServiceSuccess.Message">
+    <value>激活垃圾评论过滤服务成功.</value>
+  </data>
+  <data name="EnabledThemeSuccess.Message">
+    <value>激活主题成功成功.</value>
+  </data>
+  <data name="ExportArticleError.Message">
+    <value>没有文章可以被导出.</value>
+  </data>
+  <data name="ImportArticleExtensionError.Message">
+    <value>上传的文件扩展名错误,只能导入固定格式的XML文件.</value>
+  </data>
+  <data name="LicenseStatus.Message">
+    <value>您的模块授权将在{0}天后过期,请到dnngo.net购买.</value>
+  </data>
+  <data name="LoadingArticleError.Message">
+    <value>载入文章时发生错误,该文章不存在或已经被删除.</value>
+  </data>
+  <data name="NoModuleSetting.Message">
+    <value>点击[Settings]按钮进入当前模块的设置界面,该模块需要绑定到主模块的.</value>
+  </data>
+  <data name="NoPermissionArticleAlert.Message">
+    <value>不允许您编辑其他作者的文章,超出了您的权限范围.</value>
+  </data>
+  <data name="SaveArticleSuccess.Message">
+    <value>保存文章 :{0} 成功.</value>
+  </data>
+  <data name="SubscribeError.Message">
+    <value>订阅不成功,已经订阅或其他原因导致.</value>
+  </data>
+  <data name="ThemeGoUrl.Message">
+    <value>点击 [&lt;a href="[ThemeUrl]"&gt;跳转&lt;/a&gt;]到皮肤列表页面,选择你所需要的皮肤.</value>
+  </data>
+  <data name="ApplyStatusSuccess.Message">
+    <value>您所选择的记录状态已经更改为 {0}.</value>
+  </data>
+</root>

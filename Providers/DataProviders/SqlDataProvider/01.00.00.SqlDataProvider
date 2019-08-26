@@ -1,0 +1,203 @@
+﻿/************************************************************/
+/*****              SqlDataProvider                     *****/
+/*****                                                  *****/
+/*****                                                  *****/
+/***** Note: To manually execute this script you must   *****/
+/*****       perform a search and replace operation     *****/
+/*****       for {databaseOwner} and {objectQualifier}  *****/
+/*****                                                  *****/
+/************************************************************/
+
+/** Create Table **/
+
+ 
+/** DNNGo_ThemePlugin_Multimedia  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_Multimedia]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+		CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_Multimedia](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[Name] [nvarchar](300) NULL,
+			[FileSize] [int] NOT NULL,
+			[ImageWidth] [int] NOT NULL,
+			[ImageHeight] [int] NOT NULL,
+			[Exif] [ntext] NULL,
+			[FileName] [nvarchar](300) NOT NULL,
+			[FileMate] [nvarchar](32) NOT NULL,
+			[FilePath] [nvarchar](500) NOT NULL,
+			[FileExtension] [nvarchar](32) NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[Status] [tinyint] NOT NULL,
+			[Sort] [int] NOT NULL,
+			[Extension1] [tinyint] NOT NULL,
+			[Extension2] [int] NOT NULL,
+			[Extension3] [nvarchar](512) NULL,
+			[Extension4] [ntext] NULL,
+		 CONSTRAINT [PK_{objectQualifier}DNNGo_ThemePlugin_Multimedia] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+			WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+		)
+	  
+END
+GO
+
+ 
+
+/**  DNNGo_ThemePlugin_Relationships **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_Relationships]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_Relationships](
+		[ID] [int] IDENTITY(1,1) NOT NULL,
+		[TabID] [int] NOT NULL,
+		[FileID] [int] NOT NULL,
+		[Type] [tinyint] NOT NULL,
+		[Sort] [int] NOT NULL,
+		[ModuleId] [int] NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_ThemePlugin_Relationships_ModuleId DEFAULT 0,
+		[PortalId] [int] NOT NULL CONSTRAINT DF_{objectQualifier}DNNGo_ThemePlugin_Relationships_PortalId DEFAULT 0,
+		[LastTime] [datetime] NOT NULL,
+		[LastUser] [int] NOT NULL,
+		[LastIP] [varchar](50) NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_ThemePlugin_Relationships] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)
+		WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	)
+	  
+END
+GO
+
+
+ 
+/** DNNGo_ThemePlugin_Menu  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_Menu]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_Menu](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[TabID] [int] NOT NULL,
+			[Language] [nvarchar](50) NOT NULL,
+			[MenuType] [tinyint] NULL,
+			[MenuWidth] [int] NULL,
+			[Globals_Background] [tinyint] NOT NULL,
+			[Globals_Breadcrumb] [tinyint] NOT NULL,
+			[Options] [ntext] NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}DNNGo_ThemePlugin_Menu] PRIMARY KEY CLUSTERED 
+		(
+			[ID] ASC
+		)
+				WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+	  )
+	  
+END
+
+GO
+
+
+ 
+/** DNNGo_ThemePlugin_MenuOptions  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_MenuOptions]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_MenuOptions](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[TabID] [int] NOT NULL,
+			[TabType] [tinyint] NOT NULL,
+			[Options] [ntext] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](32) NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+	 CONSTRAINT [PK_{objectQualifier}DNNGo_ThemePlugin_MenuOptions] PRIMARY KEY CLUSTERED 
+	(
+		[ID] ASC
+	)
+			WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+		)
+	  
+END
+GO
+
+
+/** DNNGo_ThemePlugin_MenuPane  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_MenuPane]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_MenuPane](
+			[ID] [int] IDENTITY(1,1) NOT NULL,
+			[Sort] [int] NOT NULL,
+			[TagPane] [nvarchar](50) NOT NULL,
+			[PaneName] [nvarchar](50) NOT NULL,
+			[PaneWidth] [nvarchar](100) NOT NULL,
+			[TabID] [int] NOT NULL,
+			[Options] [ntext] NOT NULL,
+			[ModuleId] [int] NOT NULL,
+			[PortalId] [int] NOT NULL,
+			[LastTime] [datetime] NOT NULL,
+			[LastUser] [int] NOT NULL,
+			[LastIP] [varchar](50) NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}DNNGo_ThemePlugin_MenuPane] PRIMARY KEY CLUSTERED 
+			(
+				[ID] ASC
+			)
+			WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+		)
+	  
+END
+GO
+
+
+
+/** DNNGo_ThemePlugin_MenuRowItem  **/
+if not exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_MenuRowItem]') and OBJECTPROPERTY(id, N'IsTable') = 1)
+BEGIN
+	CREATE TABLE {databaseOwner}[{objectQualifier}DNNGo_ThemePlugin_MenuRowItem](
+				[ID] [int] IDENTITY(1,1) NOT NULL,
+				[PaneID] [int] NOT NULL,
+				[TabID] [int] NOT NULL,
+				[Sort] [int] NOT NULL,
+				[TagList] [nvarchar](50) NOT NULL,
+				[Title] [nvarchar](300) NULL,
+				[RowType] [tinyint] NOT NULL,
+				[BindTabID] [int] NOT NULL,
+				[BindModuleID] [int] NOT NULL,
+				[HTML_Title] [nvarchar](300) NOT NULL,
+				[HTML_Content] [ntext] NOT NULL,
+				[MenuID] [int] NOT NULL,
+				[MenuLevel] [int] NOT NULL,
+				[MenuDisplayTitle] [tinyint] NOT NULL,
+				[MenuSytle] [nvarchar](100) NOT NULL,
+				[Options] [ntext] NOT NULL,
+				[ModuleId] [int] NOT NULL,
+				[PortalId] [int] NOT NULL,
+				[LastTime] [datetime] NOT NULL,
+				[LastUser] [int] NOT NULL,
+				[LastIP] [varchar](50) NOT NULL,
+		 CONSTRAINT [PK_{objectQualifier}DNNGo_ThemePlugin_MenuRowItem] PRIMARY KEY CLUSTERED 
+			(
+				[ID] ASC
+			)
+			WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF)
+		)
+	  
+END
+GO
+
+
+ 
+ 
+
+/************************************************************/
+/*****              SqlDataProvider                     *****/
+/************************************************************/
+
+
+

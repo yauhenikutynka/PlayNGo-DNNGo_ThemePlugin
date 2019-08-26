@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="宋体" Size="9" />
+  <Class Name="NCode.DataAccessLayer.Access">
+    <Position X="5.25" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DataAccessLayer\Access.cs</FileName>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAACAAACAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NCode.DataAccessLayer.DAL">
+    <Position X="7.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>DataAccessLayer\DAL.cs</FileName>
+      <HashCode>gABAAECDAAACAAQCABCAIAAAAAAAAGAAAEDAQQAAAdA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DB" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="NCode.DataAccessLayer.DataBase">
+    <Position X="1" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>DataAccessLayer\DataBase.cs</FileName>
+      <HashCode>AQAAAEChACAAIAQDAAAABBAUEAAAACgAEAQAAgCCBAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="NCode.DataAccessLayer.Oracle">
+    <Position X="0.5" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>DataAccessLayer\Oracle.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NCode.DataAccessLayer.SqlServer">
+    <Position X="2.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>DataAccessLayer\SqlServer.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="NCode.DataAccessLayer.IDataBase">
+    <Position X="4.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>DataAccessLayer\IDataBase.cs</FileName>
+      <HashCode>AQAAAECBAAAAIAQCAAAAABAAEAAAACgAAAAAAACCBAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="NCode.DataAccessLayer.DatabaseType">
+    <Position X="8" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DataAccessLayer\DataBase.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAACAAAAAAEAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>
